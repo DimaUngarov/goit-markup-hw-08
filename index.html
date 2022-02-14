@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Шапка-->
-    <!-- <header class="header">
+    <!-- Шапка-->
+    <header class="header">
       <div class="container header__container">
-        <a href="index.html" class="link logo">
+        <a href="index.html" class="link logo ">
           <span class="header-logo">Web</span>Studio
         </a>
         <nav class="site-nav">
@@ -37,7 +37,8 @@
               <a href="./portfolio.html" class="link site-list__link">Портфолио
               </a>
             </li>
-            <li class="site-list__item"><a href="./" class="link site-list__link">Контакты</a></li>
+            <li class="site-list__item">
+              <a href="./" class="link site-list__link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="list connect">
@@ -59,8 +60,56 @@
             +38 096 111 11 11
         </a>
       </ul>
+       <button type="button" class="open_btn" data-menu-open>
+        <svg class="icon-menu" width="24" height="16" >
+          <use href="./images/symbol-defs.svg#icon-menu">
+          </use>
+        </svg>
+      </button>
       </div>
-    </header>  -->
+      <div class="mob_menu is-hidden" data-menu>
+        <div class="mobile-container">
+          <button type="button" class="close_menu" data-menu-close>
+            <svg class="close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-container-top">
+          <ul class="list site-list__mobile">
+            <li class="site-list-mobile__item">
+              <a href="index.html" class="link site-list-mobile__link ">Студия</a>
+            </li>
+            <li class="site-list-mobile__item">
+              <a href="./portfolio.html" class="link site-list-mobile__link">Портфолио</a>
+            </li>
+            <li class="site-list-mobile__item">
+              <a href="./" class="link site-list-mobile__link">Контакты</a>
+            </li>
+          </ul>
+          </div>
+          <div class="mobile-container-bottom">
+          <ul class="list connect-mobile">
+            <li class="connect-mobile__item">  
+              <a href="tell:+380961111111" class="link connect-mobile__tell" >
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="connect-mobile__item">
+              <a href="mailto:info@devstudio.com" class="link connect-mobile__mail" >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="list social-mobile">
+            <li class="social-mobile__item"> <a href="" class="link social-mobile__link">Instagram</a></li>
+            <li class="social-mobile__item"> <a href="" class="link social-mobile__link">Twitter</a></li>
+            <li class="social-mobile__item"> <a href="" class="link social-mobile__link">Facebook</a></li>
+            <li class="social-mobile__item"> <a href="" class="link social-mobile__link">LinkedIn</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </header> 
     <!--Главная-->
     <main>
       <!--Герой-->
@@ -554,18 +603,16 @@
           <div class="policy-field">
             <input type="checkbox" name="policy" id="policy" class="policy-check visually-hidden" />
             <label for="policy" class="policy-text"
-              ><span
-                ><svg class="policy-icon" width="16" height="15">
+              ><span><svg class="policy-icon" width="16" height="15">
                   <use href="./images/symbol-defs.svg#icon-check"></use></svg></span>
+                  <div>
               Соглашаюсь с рассылкой и принимаю
               <a
                 href="./"
                 rel="nofollow noopener noreferrer"
                 class="link policy-link"
                 target="_blank"
-              >
-                Условия договора</a
-              ></label
+              >Условия договора</a></div></label
             >
           </div>
           <button class="btn submit-btn">Отправить</button>
@@ -573,5 +620,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

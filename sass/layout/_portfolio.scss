@@ -1,5 +1,8 @@
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .filter {
   @media screen and (min-width: 768px) {
@@ -12,7 +15,13 @@
   }
 }
 .filter__list {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
 }
 .filter__item {
   display: inline-block;
