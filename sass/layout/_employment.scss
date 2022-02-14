@@ -1,5 +1,8 @@
-.section {
-  padding-bottom: 94px;
+.employment {
+  @media screen and (max-width: 1200px) {
+    display: none;
+    padding-top: -94px;
+  }
 }
 .employment__title {
   font-weight: 700;
