@@ -3,6 +3,7 @@
 }
 .header__container {
   display: flex;
+  position: relative;
   align-items: center;
   @media screen and (max-width: 768px) {
     padding-top: 16px;
@@ -54,7 +55,7 @@
 }
 .connect {
   @media screen and (min-width: 768px) {
-    margin-left: 84px;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
   }
@@ -68,9 +69,9 @@
 }
 .connect__item:not(:last-child) {
   display: flex;
-  margin-right: 30px;
-  // align-items: center;
-
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
   flex-direction: row;
 }
 .connect__link {
